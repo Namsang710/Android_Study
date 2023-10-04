@@ -34,6 +34,8 @@ class MainActivity : ComponentActivity() {
         val snap = PagerSnapHelper()
         snap.attachToRecyclerView(binding.recyclerviewCustomcalendar)
 
+        // 리사이클러뷰를 통한 커스텀 달력 구현은 성능이 좋지 않음.
+        // 다른 커스텀달력 라이브러리를 사용하려했으나 Kotlin DSL에 적용되지 않는듯... 라이브러리 설치가 안됨
 
     }
 }

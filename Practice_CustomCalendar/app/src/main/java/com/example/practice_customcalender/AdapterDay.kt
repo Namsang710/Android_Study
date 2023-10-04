@@ -13,6 +13,7 @@ import java.util.Date
 class AdapterDay(val tempMonth:Int, val dayList:MutableList<Date>) : RecyclerView.Adapter<AdapterDay.ViewHolder>() {
 
     private final val ROW = 6 // 최대 6주
+
     inner class ViewHolder(private val binding: ListItemDayBinding):RecyclerView.ViewHolder(binding.root){
         val layout = binding.itemDayLayout
         val tvDay = binding.itemDayText
@@ -29,6 +30,7 @@ class AdapterDay(val tempMonth:Int, val dayList:MutableList<Date>) : RecyclerVie
         holder.layout.setOnClickListener{
             Toast.makeText(holder.layout.context, "${dayList[position]}", Toast.LENGTH_SHORT).show()
         }
+
 
         holder.tvDay.text = dayList[position].date.toString()
 
