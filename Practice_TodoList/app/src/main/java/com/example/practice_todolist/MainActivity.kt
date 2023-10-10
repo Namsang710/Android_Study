@@ -11,4 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }
+
+
+    private fun initUI() {
+
+
+
+    }
 }

@@ -34,7 +34,7 @@ class TaskViewModel : ViewModel() {
         taskList.remove(task)
         _taskLiveData.value = taskList.toList()
     }
-    
+
     fun finishTask(task: Task){
         finishCnt = finishCnt.plus(1)
         taskList.remove(task)
