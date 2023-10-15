@@ -1,5 +1,6 @@
 package com.example.practice_todolist.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -27,6 +28,7 @@ class TaskViewModel : ViewModel() {
 
     fun addTask(title: String, content: String, taskBgColor: TaskBgColor){
         taskList.add(createTask(title, content, taskBgColor))
+        _taskLiveData.value = taskList.toList()
     }
 
     fun deleteTask(task: Task){

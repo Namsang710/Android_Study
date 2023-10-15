@@ -108,7 +108,7 @@
         tools:text="현재 0개의 할일이 남아 있어요" />
 
     <TextView
-        android:id="@+id/tast_msg"
+        android:id="@+id/task_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/task_empty_msg"
