@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             setHasFixedSize(true) // 리사이클러뷰 아이템 크기 고정
             adapter = taskAdapter
             layoutManager = LinearLayoutManager(this@MainActivity)
+            addItemDecoration(TaskItemDecoration(40))
         }
 
     }
