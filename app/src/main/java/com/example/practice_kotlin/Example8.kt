@@ -1,5 +1,6 @@
 package com.example.practice_kotlin
 
+// 08. null
 fun main(){
     var name : String = "윤형"
     var number : Int = 10
@@ -16,6 +17,6 @@ fun main(){
     nickname = null
     val size = nickname?.length
     // nickname?: "없음"
-    
+
     println(size)
 }
