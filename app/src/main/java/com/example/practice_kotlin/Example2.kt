@@ -24,3 +24,4 @@ fun times(a : Int, b : Int): Int {
 }
 
 fun times2(a : Int, b : Int): Int = a * b
+
